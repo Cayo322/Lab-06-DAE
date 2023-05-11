@@ -30,10 +30,10 @@
     {% for prod in productos %}
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card h-100">
-        <a href="producto/{{ prod.id }}/"><img class="card-img-top" src="{{ prod.imagen.url }}" alt=""></a>
+        <a href="/producto/{{ prod.id }}/"><img class="card-img-top" src="{{ prod.imagen.url }}" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
-            <a href="producto/{{ prod.id }}/">{{ prod.nombre }}</a>
+            <a href="/producto/{{ prod.id }}/">{{ prod.nombre }}</a> 
           </h4>
           <h5>S/ {{ prod.precio }}</h5>
           <p class="card-text">Categoria: {{ prod.categoria.nombre }}</p>
